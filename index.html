@@ -43,4 +43,13 @@
             }
 
             status.innerText = "Memproses naskah dengan Gemini AI...";
-            status.className
+            status.className = "text-xs text-center text-cyan-400 mt-4";
+
+            setTimeout(() => {
+                status.innerText = "Berhasil! Audio siap diunduh.";
+                status.className = "text-xs text-center text-emerald-400 mt-4";
+            }, 2000);
+        }
+    </script>
+</body>
+</html>
