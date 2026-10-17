@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Magic Voice – Studio Voice Over AI</title>
+<style>
+:root{
+  --bg:#E8ECEA; --panel:#F7F8F6; --ink:#16282B; --muted:#5B6C6E; --teal:#0F5C5C; --teal-d:#0A4545;
+  --signal:#E4572E; --line:#C4CCC8; --soft:#DDE4E1; --ok:#1E7A4F; --err:#B3261E;
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#10191B; --panel:#182427; --ink:#E6EEEC; --muted:#93A5A7; --teal:#4FB3AE; --teal-d:#7CD0CB; --signal:#FF7A52; --line:#2C3C40; --soft:#213034; --ok:#5CCB92; --err:#FF8A80;}
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font:15px/1.5 "Avenir Next","Segoe UI",system-ui,sans-serif;padding-bottom:60px}
+h1,h2,h3{margin:0;line-height:1.2}
+header{padding:28px 20px 12px;max-width:1100px;margin:auto}
+header h1{font-size:30px;letter-spacing:-.02em}
+header p{margin:6px 0 0;color:var(--muted);max-width:60ch}
+.wrap{max-width:1100px;margin:auto;padding:0 20px;display:grid;grid-template-columns:230px 1fr;gap:18px}
+@media(max-width:800px){.wrap{grid-template-columns:1fr}}
+nav{display:flex;flex-direction:column;gap:6px}
+@media(max-width:800px){nav{flex-direction:row;overflow-x:auto;padding-bottom:4px}}
+nav button{all:unset;cursor:pointer;padding:10px 14px;border-radius:10px;border:1px solid var(--line);background:var(--panel);white-space:nowrap;font-weight:600}
+nav button small{display:block;font-weight:400;color:var(--muted);font-size:12px}
+nav button[aria-selected="true"]{background:var(--teal);color:#fff;border-color:var(--teal)}
+nav button[aria-selected="true"] small{color:#CFE7E5}
+nav button:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--signal);outline-offset:2px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px;margin-bottom:16px}
+.card h2{font-size:18px;margin-bottom:4px}
+.card .sub{color:var(--muted);font-size:13px;margin:0 0 14px}
+label{display:block;font-weight:600;font-size:13px;margin:12px 0 4px}
+input[type=text],input[type=password],select,textarea{width:100%;padding:10px 12px;border:1px solid var(--line);border-radius:9px;background:var(--bg);color:var(--ink);font:inherit}
+textarea{resize:vertical;min-height:110px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:560px){.row{grid-template-columns:1fr}}
+.btn{all:unset;cursor:pointer;padding:11px 16px;border-radius:10px;font-weight:700;background:var(--teal);color:#fff;text-align:center}
+.btn:hover{background:var(--teal-d)}
+.btn.sig{background:var(--signal);color:#fff}
+.btn.ghost{background:transparent;color:var(--ink);border
